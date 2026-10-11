@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeHub | Your Personal Space</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#" class="logo">◾LifeHub</a>
+      <button id="themeBtn">Change Theme</button>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <p class="tagline">YOUR LIFE, ORGANIZED</p>
+        <h1>Welcome to <span>LifeHub</span></h1>
+        <p class="subtitle">
+          One space for your tasks, notes and everyday tools.
+        </p>
+        <button id="welcomeBtn">Get Started ➡</button>
+      </section>
+      <!-- Task Manager -->
+      <section class="task-section" id="tasks">
+        <div class="section-heading">
+          <p class="tagline">YOUR DAILY PLANNER</p>
+          <h2>My <span>Tasks</span> ✓</h2>
+          <p>Small steps, big achievements.</p>
+        </div>
+        <form id="taskForm" class="task-form">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="What do you need to do?"
+            maxlength="120"
+            required
+          />
+          <button type="submit" id="addTaskBtn">+ Add Task</button>
+        </form>
+        <p class="task-count" id="taskCount">0 tasks</p>
+        <ul id="taskList" class="task-list"></ul>
+        <p id="emptyMessage" class="empty-message">
+          ✨ No tasks yet. Add your first task!
+        </p>
+      </section>
+      <section class="features">
+        <article class="feature-card">
+          <span class="card-icon">✓</span>
+          <h2>My Tasks</h2>
+          <p>Organize your day, one task at a time.</p>
+        </article>
+        <article class="feature-card">
+          <span class="card-icon">📝</span>
+          <h2>Quick Notes</h2>
+          <p>Keep your Important ideas in one place.</p>
+        </article>
+        <article class="feature-card">
+          <span class="card-icon">🕙</span>
+          <h2>Focus Time</h2>
+          <p>Give your attention to what matters most.</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>
+        ◾LifeHub - make your every day count | Developed by Mridaakash | A💙 to
+        B💙
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
